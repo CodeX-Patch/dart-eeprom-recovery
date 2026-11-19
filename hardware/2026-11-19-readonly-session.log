@@ -1,0 +1,17 @@
+2026-11-19T17:23:07.653+08:00 START physical serial capture; read-only command allowlist enforced
+2026-11-19T17:23:07.653+08:00 HOST os=Darwin arch=arm64
+2026-11-19T17:23:07.653+08:00 PORT path=/dev/cu.usbserial-110 baud=38400 data_bits=8 parity=N stop_bits=1
+2026-11-19T17:23:07.653+08:00 USB adapter=Prolific USB-Serial Controller D VID=067B PID=2303
+2026-11-19T17:23:07.653+08:00 ALLOWLIST hello=0x0514; EEPROM read=0x051B address=0x0000 length=16
+2026-11-19T17:23:07.667+08:00 TX command=0x0514 bytes=16 hex=abcd0800026910e644a85a24b9a9dcba
+2026-11-19T17:23:07.696+08:00 RX command=0x0515 frame_bytes=48 payload_bytes=36 framing=valid integrity=0xFFFF sentinel (not a verified CRC)
+2026-11-19T17:23:07.696+08:00 IDENTITY firmware='OURUVK6X'; physical model not inferred from USB adapter
+2026-11-19T17:23:07.696+08:00 TX command=0x051B bytes=20 hex=abcd0c000d691ce62e911d404b0c8224f222dcba
+2026-11-19T17:23:07.724+08:00 RX command=0x051C frame_bytes=32 payload_bytes=20 framing=valid integrity=0xFFFF sentinel (not a verified CRC)
+2026-11-19T17:23:07.724+08:00 TX command=0x051B bytes=20 hex=abcd0c000d691ce62e911d404b0c8224f222dcba
+2026-11-19T17:23:07.744+08:00 RX command=0x051C frame_bytes=32 payload_bytes=20 framing=valid integrity=0xFFFF sentinel (not a verified CRC)
+2026-11-19T17:23:07.744+08:00 EEPROM address=0x0000 length=16 repeat_match=true sha256=882df16045847bc0ae568dbd714b57cbc8ca8a8fa26e7651f91f06c067265e13
+2026-11-19T17:23:07.744+08:00 PRIVACY raw EEPROM/channel data and USB serial numbers omitted
+2026-11-19T17:23:07.744+08:00 SUMMARY requests=3 EEPROM_write_requests=0 flash_write_requests=0 reset_requests=0
+2026-11-19T17:23:07.744+08:00 RESULT PASS: firmware handshake and two matching physical EEPROM reads
+2026-11-19T17:23:07.745+08:00 PORT closed

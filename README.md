@@ -4,6 +4,10 @@ A small, dependency-free Dart prototype for testing recovery from a lost write
 acknowledgement. The mock device keeps its EEPROM contents when the connection
 drops, so the client has to reread device state before continuing.
 
+A separate [physical-device serial session](hardware/README.md) records a real
+macOS firmware handshake and two matching EEPROM reads. The reported firmware
+identifier was `OURUVK6X`; no device writes were performed.
+
 ## Run
 
 With Dart 3.14.1 installed:
